@@ -4,6 +4,10 @@ const userSchema = require("../model/user");
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.send("fuckk");
+});
+
 router.get("/adduser", (req, res) => {
   try {
     userSchema.find((err, data) => {
