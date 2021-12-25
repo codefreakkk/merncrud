@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const userSchema = require("../model/user");
 
 const router = express.Router();
+app.use(cors());
 
 router.get("/", (req, res) => {
   res.send("fuckk");
